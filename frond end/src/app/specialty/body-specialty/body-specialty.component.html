@@ -1,0 +1,39 @@
+<!-- implementando el api para jalar los datos -->
+<div class="our-departments">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="our-departments-wrap">
+                    <h2>Nuestras Especialidades</h2>
+                    <div class="call-btn text-center">
+                        <a class="d-flex justify-content-center align-items-center button gradient-bg" [routerLink]="['/reservas/selectdate',5]">
+                           ¡ Si aun no tiene definido su especialidad !
+                           <br>
+                             Realice su reserva Aquí
+                        </a>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 jsjs" *ngFor="let items of especialidad">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img [src]="items.IconoEspecialidad" alt="">
+                                    <h3>{{items.Name}}</h3>
+                                </header>
+                                <div class="entry-content">
+                                    <p>{{items.Resumen}}</p>
+                                </div>
+                                <footer class="entry-footer">
+                                    <a id="boton" class="button" [routerLink]="['/reservas/selectdate',items.id]">Sacar Cita</a>
+                                    <br>
+                                    <br>
+                                    <a id="boton" class="button" [routerLink]="['/especialidad/detail', items.id]">Detalles</a>               
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

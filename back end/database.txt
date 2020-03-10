@@ -1,0 +1,34 @@
+opcion 1
+"username": "zwysoeudmnqmln",
+    "password": "09847fc84eb716fc3e7a94e0ec692028feb4aa12864a0021804d900c8baa84ed",
+    "database": "dao8mlm16hmv9s",
+    "host": "ec2-54-225-113-7.compute-1.amazonaws.com",
+    "dialect": "postgres"
+
+opcion 2
+"username": "qdocwojemobwyk",
+    "password": "4444d09f580221cd790d7e5c6819b27b4c118dd68e84961bc17d00bba04ed13f",
+    "database": "d8q8otvp9gqc4k",
+    "host": "ec2-23-21-13-88.compute-1.amazonaws.com",
+    "dialect": "postgres"
+
+opcion 3
+"username": "lvsfksrpfxsqea",
+    "password": "de64383b971d11be4c45fb1a7e81c031f1fa5f8c049f3cb21dac9d24504f83aa",
+    "database": "de0n6ca3uqu8pa",
+    "host": "ec2-52-203-98-126.compute-1.amazonaws.com",
+    "dialect": "postgres"
+
+opcion 4
+"username": "jlbdfzvcdbzeod",
+    "password": "fe59032956625b4b2c8e8d84f8143ae6532a166d8a9c1afd908009ea5dc1eebe",
+    "database": "det25fdrq735jp",
+    "host": "ec2-50-17-231-192.compute-1.amazonaws.com",
+    "dialect": "postgres"
+
+opcion 5
+"username": "dytluggpfxaruu",
+    "password": "cf3bc94161c52ea58be0bfc360f2f0b51bf38f2935e4d01fb7c2ccb006a7e69b",
+    "database": "dfsjgpvsus8ddh",
+    "host": "ec2-34-224-55-230.compute-1.amazonaws.com",
+    "dialect": "postgres"

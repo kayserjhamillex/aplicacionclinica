@@ -1,0 +1,113 @@
+<br>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-12 col-md-12 shadow p-3 mb-5 bg-white rounded rounded-lg border border-light">
+            <div class="col-12 col-sm-12">
+                <div class="col-12">
+                    <button type="button" (click)="accederConGoogle()" class="btn btn-danger btn-block">
+                        <i class="fab fa-google"></i>
+                        Registrarse con Google
+                    </button>
+                    <!-- <br>
+                    <button type="button" (click)="accederConFacebook()" class="btn btn-primary btn-block">
+                      <i class="fab fa-facebook"></i>
+                      Registrarse con Facebook
+                    </button> -->
+                </div>
+                <div class=" col-12 datosusuario">
+                    <div class="invisible" *ngIf="!loggedIn">
+                        <h2>
+                            Falta Iniciar Sesión
+                        </h2>
+                    </div>
+                    <div class="text-center" *ngIf="loggedIn">
+                        <br>
+                        <h5>
+                            Por favor complete los campos para registrarlo correctamente
+                        </h5>
+                        <br>
+                        <div class="col-12">
+                            <form id="formNewPaciente" name="formNewPaciente">
+                                <div class="col-12">
+                                    <label for="Fullname">
+                                        Nombres y Apellidos
+                                    </label>
+                                    <br>
+                                    <input type="text" name="Fullname"[ngModel]="editarnombre" [(ngModel)]="paciente.Fullname" class="inputs text-center">
+                                    <br>
+                                </div>
+                                <!-- <div class="col-12">
+                                    <label for="Fechana">
+                                        Fecha de Nacimiento
+                                    </label>
+                                    <br>
+                                    <input type="date" name="Fechana" [(ngModel)]="paciente.Fechana" class="inputs">
+                                    <br>
+                                </div> -->
+                                <!-- <div class="col-12">
+                                    <label for="Genero">
+                                        Genero
+                                    </label>
+                                    <br>
+                                    <input type="text" name="Genero" [(ngModel)]="paciente.Genero" class="inputs text-center">
+                                    <select name="" id="Genero" name="Genero" class="form-control" [(ngModel)]="paciente.Genero">
+                                        <option *ngFor="let wasa of genero" [value]="wasa.name">
+                                            {{wasa.name}}
+                                        </option>
+                                    </select>
+                                    <br>
+                                </div> -->
+                                <div class="col-12">
+                                    <label for="Tipodocumento">
+                                        Tipo de Documento
+                                    </label>
+                                    <br>
+                                    <!-- <input type="text" name="Tipodocumento" [(ngModel)]="paciente.Tipodocumento" class="inputs text-center"> -->
+                                    <select name="Tipodocumento" id="Tipodocumento" class="form-control" [(ngModel)]="paciente.Tipodocumento">
+                                        <option *ngFor="let hellouda of tipodoc" [value]="hellouda.name">
+                                            {{hellouda.name}}
+                                        </option>
+                                    </select>
+                                    <br>
+                                </div>
+                                <div class="col-12">
+                                    <label for="Numerodocumento">
+                                        Numero Documento
+                                    </label>
+                                    <br>
+                                    <input type="text" name="Numerodocumento" [(ngModel)]="paciente.Numerodocumento" class="inputs text-center">
+                                    <br>
+                                </div>
+                                <div class="col-12">
+                                    <label for="Email">
+                                        Correo
+                                    </label>
+                                    <br>
+                                    <input type="email" name="Email" [ngModel]="usuario.email" [(ngModel)]="paciente.Email" class="inputs text-center">
+                                    <br>
+                                </div>
+                                <!-- <div class="col-12">
+                                    <label for="Password">
+                                        Contrasena
+                                    </label>
+                                    <br>
+                                    <input type="password" name="Password" [(ngModel)]="paciente.Password" class="inputs text-center">
+                                    <br>
+                                </div> -->
+                                <div class="col-12">
+                                    <br>
+                                    <button type="submit" class="btn btn-primary btn-block" (click)="savePaciente()">
+                                        Registrar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

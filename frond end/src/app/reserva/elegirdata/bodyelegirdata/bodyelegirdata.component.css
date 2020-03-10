@@ -1,0 +1,29 @@
+.horarioDisponible{
+    width: 30%;
+    margin: auto;
+}
+.boton1{
+    background: linear-gradient(270deg, rgba(50,200,250,1) 10%, rgba(88,125,228,1) 100%);
+}
+.boton1:hover{
+    background: linear-gradient(270deg,rgba(88,125,228,1) 30% , rgba(50,200,250,1) 50%);
+}
+.atencion{
+    color: rgb(233, 13, 31);
+    font-weight: 600;
+    animation: mymove 10s infinite;
+}
+.atencion:hover{
+    color: rgba(50,200,250,1);
+}
+.calendario:hover{
+    color: rgb(5, 102, 134);
+}
+
+
+
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+  }

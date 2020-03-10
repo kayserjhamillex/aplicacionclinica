@@ -1,0 +1,45 @@
+<br>
+<br>
+<div class="conteiner">
+  <div class="row text-center">
+    <div class="col-12 col-sm-6 separador shadow p-3 mb-5 bg-white rounded">
+      <h2>
+        Reservas Medicas
+      </h2>
+      <div class="col-12 col-sm-6 col-md-4 reservas" *ngFor="let items of cita">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <br>
+                <h5 class="card-title"> {{items.horario.especialista.especialidad.Name}} </h5>
+                <h6 class="card-title">{{items.horario.especialista.doctor.Fullname}}</h6>
+                <p class="card-text"> {{items.horario.hora.Horainicio}}-{{items.horario.hora.Horafin}} </p>
+                <br>
+                <a [routerLink]="['/detallereservas',items.id]" class="btn btn-primary stretched-link">Mas Informacion</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 separador shadow-sm p-3 mb-5 bg-white rounded">
+      <h2>
+        Mi Perfil
+      </h2>
+      <div class="col-12 iamgen">
+        <img class="rounded-circle" [src]="paciente.Imagenpaciente" alt="foto paciente">
+      </div>
+      <div class="col-12 datospaciente">
+        <br>
+        <h6> Nombres y Apellidos </h6>
+        <h6> {{paciente.Fullname}} </h6>
+        <br>
+        <h6> Correo </h6>
+        <h6> {{paciente.Email}} </h6>
+        <br>
+        <h6> Numero de Documento </h6>
+        <h6> {{paciente.Numerodocumento}} </h6>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>

@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg wasa text-dark navbar-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['']">
+        <img class="d-block" src="../../assets/images/logotipo.PNG" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+    <div class="collapse navbar-collapse derecha fondocell" id="navbarsExample07">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active espaciado">
+                <a id="navegador" class="nav-link" [routerLink]="['']">
+                    Inicio
+                    <span class="sr-only">
+                        (current)
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item active espaciado">
+                <a id="navegador" class="nav-link" [routerLink]="['/about']">
+                    Nosotros
+                </a>
+            </li>
+            <li class="nav-item active espaciado">
+                <a id="navegador" class="nav-link" [routerLink]="['/especialidad']">
+                    Especialidades
+                </a>
+            </li>
+            <li class="nav-item active espaciado">
+                <a id="navegador" class="nav-link" [routerLink]="['/servicios']">
+                    Servicios
+                </a>
+            </li>
+            <li class="nav-item active espaciado">
+                <a id="navegador" class="nav-link" [routerLink]="['/contact']">
+                    Contactanos
+                </a>
+            </li>
+            <li *ngIf="!loggedIn" class="nav-item active dropdown espaciado">
+                <a id="navegador" class="nav-link dropdown-toggle user" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Usuario
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                  <a id="navegador" class="dropdown-item" [routerLink]="['/register']">
+                      Registrarse
+                  </a>
+                  <a id="navegador" class="dropdown-item" (click)="accederConGoogle()">
+                      Iniciar Sesión con Google
+                  </a>
+                  <!-- <a id="navegador" class="dropdown-item" (click)="accederConFacebook()">
+                    Iniciar Sesión con Facebook
+                  </a> -->
+                </div>
+            </li>
+            <li *ngIf="loggedIn" class="nav-item active dropdown espaciado">
+                <a id="navegador" class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{paciente.Fullname}}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                    <a id="navegador" class="dropdown-item" [routerLink]="['/especialidad']">
+                        Reservar Cita
+                    </a>
+                    <a id="navegador" class="dropdown-item" [routerLink]="['/misreservas',codigopaciente]">
+                        Citas Reservadas
+                    </a>
+                    <a id="navegador" class="dropdown-item" (click)="signOut()">
+                        Cerrar Sesión
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>

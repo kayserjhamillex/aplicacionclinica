@@ -1,0 +1,33 @@
+.wasa
+{
+    background-color: transparent;
+}
+#navegador
+{
+    color: #262626;
+    font-weight:1000;
+    display:block;
+}
+#navegador:hover
+{
+    color: #007bff;
+}
+.derecha
+{
+    /* float: right; */
+    text-align: right;
+}
+.espaciado
+{
+    margin: 0 12px;
+}
+
+@media screen and (max-width:892px) {
+  .fondocell{
+    background: whitesmoke;
+  }
+}
+.user{
+    color: #262626;
+    font-weight:1000;
+}

@@ -1,0 +1,17 @@
+<div class="medical-team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>El Equipo Medico</h2>
+            </div>
+            <!-- para poder utilizar el api descometar en el ts -->
+            <div class="col-12 col-md-6 col-lg-3" *ngFor="let medico of doctor">
+                <div class="medical-team-wrap">
+                    <img [src]="medico.Imagendoctor" alt="medico del centro medico">
+                    <h4>{{medico.Fullname}}</h4>
+                    <h5>Medico</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

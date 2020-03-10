@@ -1,0 +1,80 @@
+<br><br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-12 col-md-12 shadow p-3 mb-5 bg-white rounded rounded-lg border border-light">
+            <div class="col-12 logo">
+                <div class="col-12 col-sm-6 logo text-left pares">
+                    <img src="../../../assets/images/logotipo.PNG" class="w-25 h-25">
+                </div>
+                <div class="col-12 col-sm-6 año text-center pares">
+                    <h4>"Año de la Universalización de la salud"</h4>
+                    <div class="direccion">
+                        <h6>
+                            Av. Independencia #126
+                        </h6>
+                    </div>
+                    <div class="celular">
+                        <h6>
+                            Cell: 958899251
+                        </h6>
+                    </div>
+                    <div class="paginaweb">
+                        <h6>
+                            http://macentromedico.com
+                        </h6>
+                    </div>
+                    <div class="horaimpre">
+                        <h6>
+                            <!-- Fecha Impresión:  {{horahoy | date:'yyyy-MM-dd'}} -->
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 codigo text-center">
+                <div class="codigoreserva">
+                    <h2>
+                        Codigo Cita: {{cita.id}}
+                    </h2>
+                </div>
+            </div>
+            <hr style="border:2px;">
+            <div class="datos col-12 text-center">
+                <div class="nombrepaciente">
+                    <h2>
+                        Nombres y Apellidos:
+                    </h2>
+                    <h3>
+                        {{cita.paciente.Fullname}}
+                    </h3>
+                </div>
+                <div class="dniedad col-12">
+                    <div class="dni col">
+                        <h4>
+                            Correo: {{cita.paciente.Correo}}
+                        </h4>
+                    </div>
+                    <!-- <div class="edad col">
+                        Fecha nacimiento: {{paciente.Fechana | date:'yyyy-MM-dd'}}
+                    </div> -->
+                </div>
+                <div class="fechacita">
+                    Fecha Cita: {{cita.Fechacita | date:'yyyy-MM-dd'}}
+                </div>
+                <div class="horario">
+                    Hora Cita: {{cita.horario.hora.Horainicio}} a {{cita.horario.hora.Horafin}}
+                </div>
+                <div class="especialidad">
+                    Especialidad: {{cita.horario.especialista.especialidad.Name}}
+                </div>
+                <div class="medico">
+                    Med. Atendera: {{cita.horario.especialista.doctor.Fullname}}
+                </div>
+                <div class="precio">
+                    Precio: s/. {{cita.horario.especialista.especialidad.Precio}}.00
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

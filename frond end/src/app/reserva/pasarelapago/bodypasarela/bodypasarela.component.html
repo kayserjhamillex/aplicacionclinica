@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+      <button (click)="atras()" class="btn btn-info btn-block">
+        Elegir otra Hora
+      </button>
+      <div class="col-12 text-center">
+          <h2>Especialidad: {{nombreespecialidad}}</h2>
+          <h3>Precio: S/. {{precioconsulta}}.00</h3>
+      </div>
+      <br>
+      <div class="col-12">
+          <button (click)="purchase(nombreespecialidad, precioconsulta)" class="btn btn-primary btn-block">
+              Pagar
+          </button>
+      </div>
+      <br>
+      <div id="wakanda" class="col-12" style="display: none;">
+          <button (click)="Boleta()" class="btn btn-danger btn-block">
+              Ver Boleta y Enviarmelo a mi Gmail
+          </button>
+      </div>
+    </div>
+</div>
+<br>
+<br>

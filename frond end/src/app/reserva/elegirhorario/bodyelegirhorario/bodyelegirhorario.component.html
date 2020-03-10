@@ -1,0 +1,17 @@
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+      <button *ngIf="nohaycitas" type="submit" class="btn btn-primary btn-block botones" id="atras" (click)="atras()">
+        Atras
+      </button>
+        <div class="col-12 col-sm-6 col-md-4 p-2 " *ngFor="let obj of horafiltrada">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block botones" id="obj.id" value="obj.id" (click)="elejirhora(obj.id)">
+                    {{obj.Horainicio}} a {{obj.Horafin}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+

@@ -1,0 +1,71 @@
+<div class="contact-page-short-boxes">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="contact-info h-100">
+                    <h2 class="d-flex align-items-center ">Contactanos por:</h2>
+                    <ul class="p-0 m-0">
+                        <li><span>Dirección:</span> Av. Independecia #145 Tambo-Huancayo</li>
+                        <li><span>Celular:</span>+51 958864658</li>
+                        <li><span>Correo:</span>macentromedico2020@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-5 mt-lg-0">
+                <div class="opening-hours h-100">
+                    <h2 class="d-flex align-items-center">Horario de Atencion</h2>
+                    <ul class="p-0 m-0">
+                        <li>Lunes - Viernes <span>9:00 am - 7:30 pm</span></li>
+                        <li>Sabado <span>9:00 am - 12:30 pm</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-5 mt-lg-0">
+                <div class="emergency-box h-100">
+                    <h2 class="d-flex align-items-center">Emergencia</h2>
+                    <div class="call-btn text-center">
+                        <a class="d-flex justify-content-center align-items-center button gradient-bg"><img src="../../../assets/images/emergency-call.png"> +51 958864658</a>
+                    </div>
+                    <p>Para cualquier situación de emergencia llame al numero que aparece arriba</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Ponerse en Contacto</h2>
+            </div>
+            <div class="col-12  col-md-4">
+                <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" [(ngModel)]="contacto.Nombre">
+            </div><!-- col-4 -->
+            <div class="col-12 col-md-4">
+                <input type="email" placeholder="Correo" id="Correo" name="Correo" [(ngModel)]="contacto.Correo">
+            </div><!-- col-6 -->
+            <div class="col-12 col-md-4">
+                <input type="text" placeholder="Asunto" id="Asunto" name="Asunto" [(ngModel)]="contacto.Asunto">
+            </div>
+            <div class="col-12">
+                <textarea name="name" rows="12" cols="80" placeholder="Mensaje" id="Mensaje" name="Mensaje" [(ngModel)]="contacto.Mensaje"></textarea>
+            </div>
+            <div class="col-12">
+                <input type="button" value="Enviar Mensaje" class="button gradient-bg" (click)="savecontacto()">
+            </div>
+        </div><!-- row -->
+    </div>
+</div><!-- contact-form -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="contact-page-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1190.1166305400545!2d-75.22753217076982!3d-12.0534846879288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAzJzEyLjYiUyA3NcKwMTMnMzcuMiJX!5e1!3m2!1ses-419!2spe!4v1578162965882!5m2!1ses-419!2spe" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+               <!-- <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
+            </div><!-- map -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <div class="col-12 text-center infoespecialidad">
+                <div class="col-12 titulo">
+                    <h2>{{especialidad.Name}}</h2>
+                </div>
+                <div class="col-12 precio">
+                    <h3>s/. {{especialidad.Precio}}.00</h3>
+                </div>
+                <div class="col-12 atencion">
+                    <h4 class="atencion">Solo se atiende: {{especialidad.Atencion}}</h4>
+                </div>
+            </div>
+            <div class="col-12 text-center justify-content-md-center">
+                <h3>
+                    Elegir Fecha
+                </h3>
+                <form id="formNewCita" name="formNewCita">
+                    <div class="col-12">
+                        <br>
+                        <input type="date" id="pinshifecha" name="pinshifecha" class="inputs calendario" [(ngModel)]="alv.pinshifecha">
+                        <br>
+                    </div>
+                    <br>
+                    <div class="col-12" *ngFor="let medico of doctor1">
+                        <!-- para cuando se logre filtrar descomentar doctor1 y comentar doctor-->
+                        <!-- para solo filtrar los doctores por especialida elegida -->
+                    <!-- <div class="col-12" *ngFor="let medico of doctor1"> -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 horarioDisponible">
+                   <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">-->
+                            <label for="nombre">
+                                {{medico.Fullname}}
+                            </label>
+                            <button type="submit" class="btn btn-primary btn-block boton1" (click)="dateandid(alv.pinshifecha,medico.id)">
+                                Ver Horario Disponible
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br>

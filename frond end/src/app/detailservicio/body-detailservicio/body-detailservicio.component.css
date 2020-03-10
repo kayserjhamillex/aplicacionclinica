@@ -1,0 +1,14 @@
+.detalleServicio{
+    background: linear-gradient(270deg, rgba(50,200,250,1) 0%, rgba(88,125,228,1) 100%);
+}
+.descripcion{
+    text-align: justify;
+}
+.servis{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+

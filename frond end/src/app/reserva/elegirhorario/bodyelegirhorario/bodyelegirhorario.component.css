@@ -1,0 +1,7 @@
+.botones{
+    color: #fff;
+    background: linear-gradient(270deg, rgba(50,200,250,1) 10%, rgba(88,125,228,1) 100%);
+}
+.botones:hover{
+    background: linear-gradient(270deg, rgba(88,125,228,1) 100%, rgba(50,200,250,1) 10%);
+}

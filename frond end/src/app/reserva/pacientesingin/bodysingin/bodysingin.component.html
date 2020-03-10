@@ -1,0 +1,55 @@
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-12 col-md-12 shadow p-3 mb-5 bg-white rounded rounded-lg border border-light">
+            <div class="col-12 justify-content-md-center">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-12" *ngIf="!loggedIn">
+                        <div class="col-12">
+                            <button type="button" (click)="mandaralsingup()" class="btn btn-danger btn-block ">
+                                Registrarse
+                            </button>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <button type="button" (click)="accederConGoogle()" class="btn btn-danger btn-block">
+                                <i class="fab fa-google"></i>
+                                Iniciar con Google
+                            </button>
+                            <!-- <button type="button" (click)="accederConFacebook()" class="btn btn-primary btn-block">
+                              <i class="fab fa-google"></i>
+                              Iniciar con Facebook
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="text-center" *ngIf="loggedIn">
+                        <button (click)="signOut()" class="btn btn-info btn-block">
+                            No soy Yo
+                        </button>
+                        <div class=" col-12 datosusuario">
+                            <div class="invisible" *ngIf="!loggedIn">
+                                Falta Iniciar Sesión
+                            </div>
+                            <div class="gg text-center" *ngIf="loggedIn">
+                                <h6 class="invisible">
+                                    Si inicio Sesión
+                                </h6>
+                                <div class="col-12">
+                                    <h2> {{paciente.Fullname}}</h2>
+                                    <h3> {{paciente.Email}} </h3>
+                                    <img class="rounded-circle" [src]="paciente.Imagenpaciente" alt="imagen paciente">
+                                </div>
+                            </div>
+                            <button (click)="Pagar()" class="btn btn-info btn-block">
+                                Proceder a Pagar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
